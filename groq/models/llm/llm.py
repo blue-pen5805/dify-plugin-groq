@@ -3,7 +3,6 @@ from typing import Optional, Union
 from dify_plugin import OAICompatLargeLanguageModel
 from dify_plugin.entities.model.llm import LLMResult
 from dify_plugin.entities.model.message import PromptMessage, PromptMessageTool
-from yarl import URL
 
 class GroqLargeLanguageModel(OAICompatLargeLanguageModel):
     def _invoke(

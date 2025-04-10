@@ -26,4 +26,4 @@ class GroqSpeech2TextModel(OAICompatSpeech2TextModel):
 
     @classmethod
     def _add_custom_parameters(cls, credentials: dict) -> None:
-        credentials["endpoint_url"] = credentials.get("endpoint_url", None) or "https://api.groq.com/openai/v1"
+        credentials["endpoint_url"] = "https://api.groq.com/openai/v1"
