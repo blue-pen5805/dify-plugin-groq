@@ -4,6 +4,7 @@ from dify_plugin import OAICompatLargeLanguageModel
 from dify_plugin.entities.model.llm import LLMResult
 from dify_plugin.entities.model.message import PromptMessage, PromptMessageTool
 
+
 class GroqLargeLanguageModel(OAICompatLargeLanguageModel):
     def _invoke(
         self,

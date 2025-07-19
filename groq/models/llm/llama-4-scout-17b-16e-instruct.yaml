@@ -1,10 +1,12 @@
 model: meta-llama/llama-4-scout-17b-16e-instruct
 label:
-  zh_Hans: Llama 4 Scout (17Bx16E)
-  en_US: Llama 4 Scout (17Bx16E)
+  zh_Hans: Llama 4 Scout 17B 16E
+  en_US: Llama 4 Scout 17B 16E
 model_type: llm
 features:
   - agent-thought
+  - multi-tool-call
+  - stream-tool-call
   - vision
 model_properties:
   mode: chat
