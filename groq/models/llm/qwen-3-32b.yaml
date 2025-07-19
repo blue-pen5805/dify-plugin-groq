@@ -1,0 +1,61 @@
+# https://console.groq.com/docs/model/qwen/qwen3-32b
+model: qwen-3-32b
+label:
+  zh_Hans: Qwen3-32B
+  en_US: Qwen3-32B
+model_type: llm
+features:
+  - agent-thought
+model_properties:
+  mode: chat
+  context_size: 131072
+parameter_rules:
+  - name: temperature
+    use_template: temperature
+  - name: top_p
+    use_template: top_p
+  - name: max_tokens
+    use_template: max_tokens
+    default: 512
+    min: 1
+    max: 40960
+  - name: reasoning_effort
+    label:
+      zh_Hans: 推理工作
+      en_US: reasoning_effort
+    type: string
+    help:
+      zh_Hans: 限制推理模型的推理工作
+      en_US: constrains effort on reasoning for reasoning models
+    required: false
+    options:
+      - none
+      - default
+  - name: reasoning_format
+    label:
+      zh_Hans: 推理格式
+      en_US: reasoning_format
+    type: string
+    help:
+      zh_Hans: 指定推理模型的输出格式
+      en_US: specifying the format that the reasoning model must output
+    required: false
+    options:
+      - parsed
+      - raw
+      - hidden
+  - name: response_format
+    label:
+      en_US: Response Format
+    type: string
+    help:
+      en_US: specifying the format that the model must output
+    required: false
+    options:
+      - text
+      - json_object
+pricing:
+  input: '0.29'
+  output: '0.59'
+  unit: '0.000001'
+  currency: USD

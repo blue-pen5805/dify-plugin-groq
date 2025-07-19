@@ -1,7 +1,7 @@
-model: llama-3.1-8b-instant
+model: mistral-saba-24b
 label:
-  zh_Hans: Llama-3.1-8b-instant
-  en_US: Llama-3.1-8b-instant
+  zh_Hans: Mistral Saba 24B
+  en_US: Mistral Saba 24B
 model_type: llm
 features:
   - agent-thought
@@ -9,7 +9,7 @@ features:
   - stream-tool-call
 model_properties:
   mode: chat
-  context_size: 131072
+  context_size: 32768
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -19,7 +19,7 @@ parameter_rules:
     use_template: max_tokens
     default: 512
     min: 1
-    max: 131072
+    max: 32768
   - name: response_format
     label:
       en_US: Response Format
@@ -31,7 +31,7 @@ parameter_rules:
       - text
       - json_object
 pricing:
-  input: '0.05'
-  output: '0.08'
+  input: '0.79'
+  output: '0.79'
   unit: '0.000001'
   currency: USD

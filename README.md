@@ -5,6 +5,8 @@ forked from [Official Plugin](https://github.com/langgenius/dify-official-plugin
 ## Changes
 
 - Add `base_url` parameter.
+- Add new models.
+- Remove deprecated models.
 
 ---
 

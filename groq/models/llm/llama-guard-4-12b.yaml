@@ -1,13 +1,13 @@
-model: llama-guard-3-8b
+model: meta-llama/llama-guard-4-12b
 label:
-  zh_Hans: Llama-Guard-3-8B
-  en_US: Llama-Guard-3-8B
+  zh_Hans: Llama Guard 4 12B
+  en_US: Llama Guard 4 12B
 model_type: llm
 features:
-  - agent-thought
+  - vision
 model_properties:
   mode: chat
-  context_size: 8192
+  context_size: 131072
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -17,10 +17,9 @@ parameter_rules:
     use_template: max_tokens
     default: 512
     min: 1
-    max: 8192
+    max: 1024
 pricing:
   input: '0.20'
   output: '0.20'
   unit: '0.000001'
   currency: USD
-deprecated: true
