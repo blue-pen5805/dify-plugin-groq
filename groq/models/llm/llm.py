@@ -19,9 +19,6 @@ class GroqLargeLanguageModel(OAICompatLargeLanguageModel):
     ) -> Union[LLMResult, Generator]:
         self._add_custom_parameters(credentials)
 
-        if "response_format" in model_parameters:
-            stream = False
-
         return super()._invoke(model, credentials, prompt_messages, model_parameters, tools, stop, stream)
 
     def validate_credentials(self, model: str, credentials: dict) -> None:
