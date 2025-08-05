@@ -1,6 +1,6 @@
 # Dify Plugin - Groq
 
-forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/groq)
+forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/groq) v0.0.9
 
 ## Changes
 
